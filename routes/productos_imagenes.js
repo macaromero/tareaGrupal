@@ -10,7 +10,7 @@ const img = [
 ];
 
 router.get('/', (req, res) => {
-    res.end();
+    res.json(img);
   });
 
 module.exports = router;

@@ -11,6 +11,11 @@ const adminRouter = require('./routes/admin');
 const productosRouter = require('./routes/productos');
 const registroRouter = require('./routes/registro');
 const loginRouter = require('./routes/login');
+const direccionRouter = require ('./routes/direccion_envio');
+const compraRouter = require ('./routes/compra_producto');
+const pagoRouter = require ('./routes/estado_pago');
+const imagenesRouter = require ('./routes/productos_imagenes');
+const provinciaRouter = require ('./routes/provincia');
 
 var app = express();
 
@@ -31,6 +36,11 @@ app.use('/admin', adminRouter);
 app.use('/productos', productosRouter);
 app.use('/registro', registroRouter);
 app.use('/login', loginRouter);
+app.use('/direccion_envio', direccionRouter);
+app.use('/compra_producto', compraRouter);
+app.use('/estado_pago', pagoRouter);
+app.use('/productos_imagenes', imagenesRouter);
+app.use('/provincia', provinciaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

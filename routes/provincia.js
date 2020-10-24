@@ -10,9 +10,8 @@ const provincia = [
 ];
 
 router.get('/', (req, res) => {
-    res.render('usuarios', {provincia});
+    res.json(provincia);
   });
 
 
-module.exports = provincia;
 module.exports = router;

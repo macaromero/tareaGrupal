@@ -15,8 +15,8 @@ const direccion = [
 ];
 
 router.get('/', (req, res) => {
-    res.end();
+    res.json(direccion);
   });
 
-
+module.exports = direccion;
 module.exports = router;

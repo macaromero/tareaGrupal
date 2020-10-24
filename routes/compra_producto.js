@@ -12,7 +12,7 @@ const compraProducto = [
 ];
 
 router.get('/', (req, res) => {
-    res.end();
+    res.json(compraProducto);
   });
 
 

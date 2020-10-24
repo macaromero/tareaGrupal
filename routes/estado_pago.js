@@ -14,7 +14,7 @@ const pago = [
 ];
 
 router.get('/', (req, res) => {
-    res.end();
+    res.json(pago);
   });
 
 
