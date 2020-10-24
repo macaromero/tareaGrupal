@@ -15,9 +15,8 @@ const direccion = [
 ];
 
 router.get('/', (req, res) => {
-    res.render('usuarios', {direccion});
+    res.end();
   });
 
 
-module.exports = direccion;
 module.exports = router;

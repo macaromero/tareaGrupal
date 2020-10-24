@@ -12,9 +12,8 @@ const compraProducto = [
 ];
 
 router.get('/', (req, res) => {
-    res.render('usuarios', {compraProducto});
+    res.end();
   });
 
 
-module.exports = compraProducto;
 module.exports = router;

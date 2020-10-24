@@ -10,9 +10,8 @@ const categoria = [
 ];
 
 router.get('/', (req, res) => {
-    res.render('usuarios', {categoria});
+    res.end();
   });
 
 
-module.exports = categoria;
 module.exports = router;

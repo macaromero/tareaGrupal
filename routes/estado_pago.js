@@ -14,9 +14,8 @@ const pago = [
 ];
 
 router.get('/', (req, res) => {
-    res.render('usuarios', {pago});
+    res.end();
   });
 
 
-module.exports = pago;
 module.exports = router;
